@@ -1,0 +1,121 @@
+I want to create a web and mobile app based software called “TrucksPulse” for truck owners to be able to:
+- Monitor and set reminders for
+    - servicing 
+    - licenses 
+    - anything really
+   NB: they should be able to set a reminder for tasks, specify date and time for task and time for reminders and frequency of reminders.
+
+- Keep records of Drivers and helpers
+   - basic KYC records (Fullname, email, phone number, address, nationality.
+   - Wage amount
+   - hourly or daily pay
+
+
+Two main user groups
+- Group 1 has all access to the entire platform, administering Group 2
+
+- Group 2 is divided into 3 sub-groups. Group A administers the remaining 2 subgroups B and C.
+
+Call Group 1 , Super Administrator. Call subgroup A, Trucker. Call subgroup B, Driver and call subgroup C, Helper.
+
+Super Administrator creates and administers Truckers, and can see all activities of the Truckers.
+
+Truckers Add Trucks to their platform, they also add Drivers and Helpers to their platform.
+
+The Trucker should be able to be reminded (via phone, text message and email) about any Truck license about to expire in 1 month. Reminders should go out 1 month to Expiry, 2 weeks to Expiry and 3 days to Expiry only when reminders have not been turned off by either the Super Administrator or the Trucker.
+
+The Trucker should be able to add Drivers and Helpers to his platform. Trucker should be able to assign and unassign a Driver and a Helper to a truck.
+
+A trucker should be able to see how many days a Driver or Helper has worked so as to be able to pay them appropriately bi-weekly.
+
+A Driver and Helper should be able to see how many days they've worked and should be able to see how much they would be paid and their next pay due date.
+
+Drivers and Helpers will be able to check in and check out to work, daily, this is important to calculate their bi-weekly pay.
+
+Drivers and Helpers would also be reminded (via text message, phone call and email) about their expiring license. 
+
+Portal users
+- Super Administrator (oversees the entire platform)
+
+Trucker
+- Administrator (oversees a trucker)
+- Finance
+- Driver
+- Helper
+
+-----------
+
+Trucker Platform
+
+Driver (same with helper)
+- Profile
+   - modify KYC records (only Administrator can authorize changes)
+- upload permits and licenses 
+    - specify expiry date for each license and permit
+- modify password 
+- Start and End work day. (This is used to pay staff bi-weekly)
+- Request IOU (this can only be up to 50% of due pay)
+- View days worked per payment cycle
+- View amount due so far per payment cycle
+- Request for day(s) off
+
+Driver/Helper Dashboard shows days worked and amount due
+
+
+Administrator
+- Add/Modify/View/Delete Admins 
+   - Fullname
+   - Phone Number
+   - Sex
+    - Email Address
+    - Password
+    - Residential Address
+
+- Add/View/Modify Truck
+    - Truck Info
+        - Make, model, year, size (height and width) weight, load capacity
+         - Vehicle Registration
+             - Province 
+             - Registration date
+             - Expiry date
+             - License Plate
+
+         - Vehicle Insurance 
+            - Insurer Name, Policy Number, Policy Derails, Effective Date, Expiry Date
+
+CVSE
+- CVSA_Inspection_report
+- Safety Permit
+
+Permits
+- Authority 
+- Permit type
+- Item name
+- Item Number
+- Item description 
+- Issue Date
+- Expiry Date
+
+Tasks
+- Task Name
+- Task description
+- Task Date
+
+
+- Add Staff
+   - Fullname
+   - Sex
+   - Date of Birth
+   - Email address
+   - Password
+   - Phone Number 
+   - Residential Address
+   - Nationality
+   - Status
+      - If Temp (Date of Expiry)
+   - Role (Driver or Helper)
+
+- Licenses
+   - Type
+   - Issue Date
+   - Expiry Date
