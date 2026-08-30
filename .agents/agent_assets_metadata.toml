@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "jUuQcJCDAnVELc1K3I6dD"
+uri = "file://warehouse-equipment-tracker.xlsx"
+type = "table"
+title = "Warehouse Equipment Tracker"
